@@ -1,6 +1,7 @@
 const db = require('../db')
 const Item = require('../models/Item')
 
+
 db.on('error', console.error.bind(console, 'MongoDB connection error'))
 
 const main = async () => {
