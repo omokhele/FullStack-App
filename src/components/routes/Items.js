@@ -23,7 +23,7 @@ function Items() {
 
     const itemsData = items.map((item) => {
         return <li key={item._id}>
-        <NavLink to={`/items/${item._id}`}> {item.title} </NavLink>
+        <NavLink to={`${apiUrl}/items/${item._id}`}> {item.title} </NavLink>
         </li>
     })
 
