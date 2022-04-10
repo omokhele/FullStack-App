@@ -82,6 +82,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios'
 import Layout from '../shared/Layout';
 import ItemForm from '../shared/ItemForm';
+import apiUrl from '../../apiConfig';
 
 function ItemEdit() {
     const navigate = useNavigate();

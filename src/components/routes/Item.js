@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { NavLink, useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios'
 import Layout from '../shared/Layout'
-
+import apiUrl from '../../apiConfig';
 
 function Item() {
     const [item, setItem] = useState([])
@@ -24,7 +24,7 @@ function Item() {
         }
     }
         fetchData()
-    }, [])
+    }, [id])
 
     useEffect(() => {
         // if (!item)
