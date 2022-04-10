@@ -21,7 +21,6 @@ function ItemCreate() {
 
     const handleSubmit = (event) => {
         event.preventDefault()
-
         //if entry is created in the database, save response data in state
         axios({
             url: `${apiUrl}/items`,
