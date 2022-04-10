@@ -97,7 +97,7 @@ const [updated, setUpdated] = useState(false)
 useEffect(()=> {
     const fetchData = async() => {
     try{
-        const response = await axios(`http://localhost:3000/api/items/${id}`)
+        const response = await axios(`${apiUrl}/items/${id}`)
         console.log('itemEdit', response);
         setItem(response.data)
     }catch (err) {
@@ -117,7 +117,7 @@ const handleChange = (event) => {
 const handleSubmit = (event) => {
     event.preventDefault()
     axios({
-        url: `http://localhost:3000/api/items/${id}`,
+        url: `${apiUrl}/items/${id}`,
         method: 'PUT',
         data: item
     }).then(() => setUpdated(true)).catch(console.error)

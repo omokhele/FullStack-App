@@ -8,7 +8,7 @@ function Items() {
 
     const fetchData = async () => {
         try{
-            const response = await axios('http://localhost:3000/api/items')
+            const response = await axios(`${apiUrl}/items`)
             setItems(response.data.items)
 
         }catch(error){
