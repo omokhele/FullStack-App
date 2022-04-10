@@ -27,9 +27,9 @@ function Item() {
     }, [])
 
     useEffect(() => {
-        if (!item)
-        return <p>Loading...</p>
-    }, [item])
+        // if (!item)
+        // return <p>Loading...</p>
+    }, [])
 
     const destroy = () => {
         axios({
