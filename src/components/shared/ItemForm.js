@@ -1,66 +1,66 @@
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-// const ItemForm = ({ item, handleSubmit, handleChange, cancelPath }) => {
-//   return (
-//     <form onSubmit={handleSubmit}>
-//       <label>Title</label>
+const ItemForm = ({ item, handleSubmit, handleChange, cancelPath }) => {
+  return (
+    <form onSubmit={handleSubmit}>
+      <label>Title</label>
 
-//       <input
-//         placeholder="A vetted Item"
-//         defaultValue={item.title}
-//         name="title"
-//         onChange={(e) =>  handleChange(e)}
-//       />
+      <input
+        placeholder="A vetted Item"
+        defaultValue={item.title}
+        name="title"
+        onChange={(e) =>  handleChange(e)}
+      />
 
-//       <input
-//         placeholder="http://coolstuff.com"
-//         defaultValue={item.link}
-//         name="link"
-//         onChange={(e) => handleChange(e)}      
-//       />
+      <input
+        placeholder="http://coolstuff.com"
+        defaultValue={item.link}
+        name="link"
+        onChange={(e) => handleChange(e)}      
+      />
 
-//       <button type="submit" >Submit</button>
+      <button type="submit" >Submit</button>
 
-//       <Link to={cancelPath}>
-//         <button>Cancel</button>
-//       </Link>
+      <Link to={cancelPath}>
+        <button>Cancel</button>
+      </Link>
 
-//     </form>
-//   )
-// }
+    </form>
+  )
+}
 
-// export default ItemForm
+export default ItemForm
 
 
 // my code
 
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
-const ItemForm = ({item, handleSubmit, handleChange, cancelPath}) => {
-    return (
-        <form onSubmit = {handleSubmit}>
-            <label>Title</label>
+// const ItemForm = ({item, handleSubmit, handleChange, cancelPath}) => {
+//     return (
+//         <form onSubmit = {handleSubmit}>
+//             <label>Title</label>
 
-            <input 
-            placeholder="A vetted Item"
-            defaultValue={item.title}
-            name="title"
-            onChange={(e) => handleChange(e)}
-            />
+//             <input 
+//             placeholder="A vetted Item"
+//             defaultValue={item.title}
+//             name="title"
+//             onChange={(e) => handleChange(e)}
+//             />
 
-            <input 
-            placeholder="http://coolstuff.com"
-            defaultValue={item.link}
-            name="link"
-            onChange={(e) => handleChange(e)}
-            />
+//             <input 
+//             placeholder="http://coolstuff.com"
+//             defaultValue={item.link}
+//             name="link"
+//             onChange={(e) => handleChange(e)}
+//             />
 
-            <button type="submit" >Submit</button>
+//             <button type="submit" >Submit</button>
 
-            <Link to={cancelPath}></Link>
-            <button>Cancel</button>
-        </form>
-    )
-}
+//             <Link to={cancelPath}></Link>
+//             <button>Cancel</button>
+//         </form>
+//     )
+// }
 
-export default ItemForm
+// export default ItemForm

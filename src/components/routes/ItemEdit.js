@@ -105,7 +105,7 @@ useEffect(()=> {
     }
 }
 fetchData()
-}, [])
+}, [id])
 
 
 const handleChange = (event) => {
@@ -128,7 +128,7 @@ useEffect(() => {
     if (updated) {
         return navigate(`/items/${id}`)
     }
-}, [])
+}, [id, navigate, updated])
 
 return (
     <Layout>
